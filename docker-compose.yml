@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  kernel:
+    image: ms-kernel
+    container_name: ms-kernel
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8801:8080"
+#    volumes:
+#      - D:\wiem\dockerdata\propreties\zuul-server.properties:./application.properties
+
+#
